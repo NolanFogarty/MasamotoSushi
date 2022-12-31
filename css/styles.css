@@ -1,0 +1,18 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #aaa6a6;
+    font-family: 'Open Sans', serif;
+}
+
+#logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 128px;
+    height: 128px;
+}
+
+.nav-item {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
