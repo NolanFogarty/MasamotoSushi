@@ -9,12 +9,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Churchward+Ultra+Bold" rel="stylesheet" type="text/css">
     </head>
 
     <body>
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-lg-none" href="#">
                     <img src="./Images/logo4.png">
@@ -53,23 +52,33 @@
         <div class="container">
             <h1 class="menu-header" id="lunch">Lunch</h1>
             <div class="Menu">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                          Accordion Item #1
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          SUSHI BAR LUNCH
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <ul class="menu-wrapper">
+                                <li class="menu-item">
+                                    <h5 class="dish">LUNCH HOURS</h5>
+                                </li>
+                                <li class="menu-item">SUSHI LUNCH <br> $11.00</li>
+                                <li class="menu-item">SASHIMI LUNCH <br> $14.00</li>
+                                <li class="menu-item">SUSHI & SASHIMI LUNCH <br> $16.00</li>
+                                <li class="menu-item">CHIRASHI <br> $14.00</li>
+                                <li class="menu-item">EEL DON<br>$11.00</li>
+                                <li class="menu-item">CHOICE TWO ROLLS<br>$12.00</li>          
+                            </ul>       
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          Accordion Item #2
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          BENTO BOX
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -80,8 +89,8 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                          Accordion Item #3
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          LUNCH SPECIALS
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -92,7 +101,6 @@
                     </div>
                   </div>
             </div>
-        </div>
 
         <!-- jQuery (Bootstrap plugins depend on it) -->
         <script src="js/bootstrap.bundle.min.js"></script>

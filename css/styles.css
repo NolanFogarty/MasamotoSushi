@@ -50,11 +50,50 @@ body {
 /* Menu Styling */
 .menu-header {
     text-align: center;
-    padding: 60px;
+    padding: 50px;
     font-weight: 300;
+    color: #ffffff;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
 
+@media (max-width: 768px) {
+    .column {
+      width: 100%;
+      float: none;
+    }
+}
+
+.accordian-header {
+    text-align: center;
+}
+
+.accordion-button{
+    display:block;
+    background-color: #743432;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.container {
+    padding: auto;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid #00000033;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-wrapper {
+    padding-left: 0;
+}
 
 
 
