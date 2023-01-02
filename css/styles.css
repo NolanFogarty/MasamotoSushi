@@ -45,6 +45,15 @@ body {
         margin-right: 0;
         padding: 0 1em;
     }
+    .accordian-body {
+        display:flex;
+    }
+    
+    .menu-item-wrapper {
+        float: left;
+        width: 48%;
+    }
+
 }
 
 /* Menu Styling */
@@ -59,12 +68,30 @@ body {
     text-align: center;
 }
 
-.accordion-button{
+.accordion-button {
     display:block;
     background-color: #743432;
     color: #ffffff;
     letter-spacing: 2px;
     font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    display:block;
+    background-color: #743432;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.accordion-button .collapsed {
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #00FFFFFF;
+    box-shadow: none;
 }
 
 .container {
@@ -77,6 +104,7 @@ body {
 
 .menu-item-wrapper {
     margin: 10px;
+    margin-bottom: 20px;
 }
 .menu-item-header {
     text-align: center;
@@ -93,7 +121,49 @@ body {
 
 .menu-wrapper {
     padding-left: 0;
+    list-style-type: none;
 }
+
+.menu-header {
+    scroll-margin-top: 1em;
+}
+
+.menu-item {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+
+.pricing {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.menu-item-descriptor {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#any-two {
+    font-style: italic;
+}
+
+.menu-item-hours {
+    margin-bottom: 20px;
+    margin: 10px;
+    width: 97.5%;
+}
+
+.hour-description{
+    color: #743432;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 
 
 
