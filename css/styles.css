@@ -7,7 +7,7 @@
 
 body {
     font-size: 16px;
-    background-color: #aaa6a6;
+    background-color: #4C5B61;
     font-family: 'Open Sans', serif;
 }
 
@@ -37,34 +37,25 @@ body {
     color: #C4BBB8;
 }
 
-@media screen and (min-width: 992px){
-    .navbar-brand img {
-        width: 100px;
-    }
-    .navbar-brand {
-        margin-right: 0;
-        padding: 0 1em;
-    }
-    .accordian-body {
-        display:flex;
-    }
-    
-    .menu-item-wrapper {
-        float: left;
-        width: 48%;
-    }
-    .menu-item-descriptor {
-        min-height: 18px;
-    }
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28116, 52, 50, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler {
+    color: #00000000;
 }
 
 /* Menu Styling */
 .menu-header {
     text-align: center;
-    padding: 50px;
+    padding: 1.5em;
     font-weight: 300;
     color: #ffffff;
+    margin-bottom: 0px;
 }
 
 .accordian-header {
@@ -97,10 +88,6 @@ body {
     box-shadow: none;
 }
 
-.container {
-    padding: auto;
-}
-
 .menu-item .pricing {
     display: inline-block;
 }
@@ -109,6 +96,7 @@ body {
     margin: 10px;
     margin-bottom: 20px;
 }
+
 .menu-item-header {
     text-align: center;
     border-bottom: 1px solid #00000033;
@@ -166,6 +154,51 @@ body {
     font-size: 12px;
     font-weight: 600;
 }
+
+.lunch-container, .dinner-container{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.dinner-container {
+    background-color: #DCC9B6;
+}
+
+#dinner {
+    color:#743432;
+}
+
+@media screen and (min-width: 992px){
+    .navbar-brand img {
+        width: 100px;
+    }
+    .navbar-brand {
+        margin-right: 0;
+        padding: 0 1em;
+    }
+    .accordian-body {
+        display:flex;
+    }
+    
+    .menu-item-wrapper {
+        float: left;
+        width: 47%;
+    }
+    .menu-item-descriptor {
+        min-height: 18px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .lunch-container, .dinner-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
 
 
 

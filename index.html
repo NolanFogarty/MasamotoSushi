@@ -18,28 +18,28 @@
                 <a class="navbar-brand d-lg-none" href="#">
                     <img src="./Images/logo4.png">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#lunch">Lunch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dinner</a>
-                    </li>
-                    <li>
-                        <a class="navbar-brand d-none d-lg-block" href="#">
-                            <img src="./Images/logo4.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lunch">Lunch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dinner">Dinner</a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand d-none d-lg-block" href="#">
+                                <img src="./Images/logo4.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,18 +49,18 @@
         <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"></div>
 
         <!-- LUNCH Content Area -->
-        <div class="container">
+        <div class="lunch-container">
             <h1 class="menu-header" id="lunch">Lunch</h1>
             <div class="Menu">
-                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                <div class="accordion accordion-flush" id="accordionDinner">
                     <div class="accordion-item">
                     <!-- SUSHI BAR -->
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           SUSHI BAR LUNCH
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDinner">
                         <div class="accordion-body clearfix">
                             <ul class="menu-wrapper">
                                 <li class="menu-item-hours">
@@ -71,7 +71,7 @@
                                         Lunch service is Mon to Sat between opening and 3:00 pm.
                                     </div>
                                     <div class="menu-item-descriptor">
-                                        Served with a choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
+                                        Served with choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
                                     </div>
                                 </li>
                                 <li class="menu-item-wrapper">
@@ -134,12 +134,12 @@
                     </div>
                     <!-- Lunch Specials -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           LUNCH SPECIALS
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                         <div class="accordion-body clearfix">
                             <ul class="menu-wrapper">
                                 <li class="menu-item-hours">
@@ -147,7 +147,7 @@
                                         <h5 class="menu-item"></h5>
                                     </div>
                                     <div class="menu-item-descriptor">
-                                        Served with a choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
+                                        Served with choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
                                     </div>
                                 </li>
                                 <li class="menu-item-wrapper">
@@ -228,12 +228,12 @@
                     </div>
                     <!-- Bento Box -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           BENTO BOX
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                         <div class="accordion-body clearfix">
                             <ul class="menu-wrapper">
                                 <li class="menu-item-hours">
@@ -322,12 +322,441 @@
                     </div>
                     <!-- Noodles -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                             NOODLES
                           </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                          <div class="accordion-body clearfix">
+                              <ul class="menu-wrapper">
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">SHRIMP TEMPURA UDON</h5>
+                                          <div class="pricing">&dollar;9.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        thick udon noodles in savory fish broth with battered and fried shrimp
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">CHICKEN PAD THAI</h5>
+                                          <div class="pricing">&dollar;8.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        stir-fried noodles with chicken and Thai spices | shrimp, &dollar;9
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">SINGAPORE NOODLE</h5>
+                                          <div class="pricing">&dollar;8.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        hin rice noodles with protein and vegetables | chicken, &dollar;8 | shrimp, &dollar;9
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">CHICKEN LO MEIN</h5>
+                                          <div class="pricing">&dollar;8.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        stir-fried soft wheat noodles with chicken and vegetables in a savory sauce | beef, &dollar;8 | shrimp, &dollar;9
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">BEEF CHOW FUN</h5>
+                                          <div class="pricing">&dollar;10.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        wide, flat rice noodles stir-fried with tender slices of beef and vegetables
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">PHO NOODLES</h5>
+                                          <div class="pricing">&dollar;10.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                            Vietnamese pho, made with rice noodles, a savory beef broth, and thin slices of beef
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">ROASTED DUCK NOODLE SOUP</h5>
+                                          <div class="pricing">&dollar;10.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        egg noodles and slices of roast duck served in a flavorful broth
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">FRIED RICE</h5>
+                                          <div class="pricing">&dollar;8.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                          stir-fried rice with a variety of vegetables and protein | beef, &dollar;8 | chicken, &dollar;8 | shrimp, &dollar;9
+                                      </div>
+                                  </li>
+                              </ul>       
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Lunch Specials -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            BEVERAGES
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                          <div class="accordion-body clearfix">
+                              <ul class="menu-wrapper">
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">THAI ICED TEA</h5>
+                                          <div class="pricing">&dollar;3.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                        sweet Thai tea with heavy cream
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">HOT GREEN TEA</h5>
+                                          <div class="pricing">&dollar;1.50</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">JUICE</h5>
+                                          <div class="pricing">&dollar;3.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                          apple or cranberry
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">PERRIER WATER</h5>
+                                          <div class="pricing">&dollar;6.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+    
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">FIJI WATER</h5>
+                                          <div class="pricing">&dollar;3.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                      </div>
+                                  </li>
+                                  <li class="menu-item-wrapper">
+                                      <div class="menu-item-header">
+                                          <h5 class="menu-item">SODA</h5>
+                                          <div class="pricing">&dollar;11.00</div>
+                                      </div>
+                                      <div class="menu-item-descriptor">
+                                          coke, diet coke, sprite, ginger ale, unsweetened ice tea
+                                      </div>
+                                  </li>
+                              </ul>       
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- DINNER Content Area -->
+        <div class="dinner-container">
+            <h1 class="menu-header" id="dinner">DINNER</h1>
+            <div class="Menu">
+                <div class="accordion accordion-flush" id="accordion">
+                    <div class="accordion-item">
+                    <!-- SUSHI BAR -->
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          SUSHI BAR LUNCH
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDinner">
+                        <div class="accordion-body clearfix">
+                            <ul class="menu-wrapper">
+                                <li class="menu-item-hours">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">LUNCH HOURS</h5>
+                                    </div>
+                                    <div class="hour-description">
+                                        Lunch service is Mon to Sat between opening and 3:00 pm.
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        Served with a choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">SUSHI LUNCH</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        4 piece sushi &amp; California roll 
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">SASHIMI LUNCH</h5>
+                                        <div class="pricing">&dollar;14.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        12 pcs. assorted of fish
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">SUSHI &amp; SASHIMI LUNCH</h5>
+                                        <div class="pricing">&dollar;16.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        3 pcs sushi, 7 pcs. sashimi &amp; california roll
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">CHIRASHI</h5>
+                                        <div class="pricing">&dollar;14.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        assorted sashimi over sushi rice
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">EEL DON</h5>
+                                        <div class="pricing">&dollar;12.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        unagi filets over sushi rice
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">ANY TWO ROLL</h5>
+                                        <div class="pricing">&dollar;10.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor" id="any-two">
+                                        Tuna / Salmon / Yellowtail / Spicy Tuna / Spicy Salmon / Tuna Avocado / Alaskan / Boston / Eel Cucumber / California / Philly / Asparagus / Sweet Potato / Avocado / Cucumber / Vegetable / Shrimp Avocado / Eggplant
+                                    </div>
+                                </li>
+                            </ul>       
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Lunch Specials -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          LUNCH SPECIALS
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDinner">
+                        <div class="accordion-body clearfix">
+                            <ul class="menu-wrapper">
+                                <li class="menu-item-hours">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item"></h5>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        Served with a choice of hot&nbsp;and&nbsp;sour or miso soup, and a salad
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">GENERAL TSO'S CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        crispy chicken in a sweet and spicy chili sauce 
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">BROCCOLI BEEF</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        thinly sliced beef and broccoli florets | chicken, &dollar;11
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">MANGO SHRIMP</h5>
+                                        <div class="pricing">&dollar;12.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        jumbo shrimp with mango, asparagus and sweet pepper served in a mango shell | chicken, &dollar;11
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">TERIYAKI CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        grilled chicken glazed it with a sweet and savory sauce. served with steamed rice and vegetables
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">KUNG PAO CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        Sichuan dish with diced chicken and peanuts
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">BASIL CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        stir-fried with thai sweet basil | beef, &dollar;12
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">RED or GREEN CURRY CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        served with mixed vegetables | beef, &dollar;11 | shrimp, &dollar;12
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">KARBI</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        sweet and spicy korean barbecue short ribs served with lettuce wraps and kimchi
+                                    </div>
+                                </li>
+                            </ul>       
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Bento Box -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="Three">
+                        <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          BENTO BOX
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDinner">
+                        <div class="accordion-body clearfix">
+                            <ul class="menu-wrapper">
+                                <li class="menu-item-hours">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item"></h5>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        Served with California Roll, Spring Roll, choice of Hot&nbsp;and&nbsp;Sour or Miso Soup, Salad &amp; Rice
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">GENERAL TSO'S CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        crispy chicken in a sweet and spicy chili sauce 
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">BROCCOLI BEEF</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        thinly sliced beef and broccoli florets | chicken, &dollar;11
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">MANGO SHRIMP</h5>
+                                        <div class="pricing">&dollar;12.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        jumbo shrimp with mango, asparagus and sweet pepper served in a mango shell | chicken, &dollar;11
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">TERIYAKI CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        grilled chicken glazed it with a sweet and savory sauce. served with steamed rice and vegetables
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">KUNG PAO CHICKEN</h5>
+                                        <div class="pricing">&dollar;10.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        Sichuan dish with diced chicken and peanuts
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">BASIL CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        stir-fried with thai sweet basil | beef, &dollar;12
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">RED or GREEN CURRY CHICKEN</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        served with mixed vegetables | beef, &dollar;11 | shrimp, &dollar;12
+                                    </div>
+                                </li>
+                                <li class="menu-item-wrapper">
+                                    <div class="menu-item-header">
+                                        <h5 class="menu-item">SHRIMP TEMPURA AND VEGETABLES</h5>
+                                        <div class="pricing">&dollar;11.00</div>
+                                    </div>
+                                    <div class="menu-item-descriptor">
+                                        crispy battered shrimp and vegetables served with tempura dipping sauce
+                                    </div>
+                                </li>
+                            </ul>       
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Noodles -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            NOODLES
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
                           <div class="accordion-body clearfix">
                               <ul class="menu-wrapper">
                                   <li class="menu-item-wrapper">
@@ -409,12 +838,12 @@
 
                                           <!-- Lunch Specials -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             BEVERAGES
                           </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
                           <div class="accordion-body clearfix">
                               <ul class="menu-wrapper">
                                   <li class="menu-item-wrapper">
@@ -474,10 +903,10 @@
                         </div>
                       </div>
                   </div>
-            </div>
 
         <!-- jQuery (Bootstrap plugins depend on it) -->
+        <script src="js/jquery-3.6.3.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
