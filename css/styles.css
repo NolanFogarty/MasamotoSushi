@@ -94,7 +94,7 @@ body {
 
 .menu-item-wrapper {
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .menu-item-header {
@@ -169,6 +169,81 @@ body {
     color:#743432;
 }
 
+.menu-item-includes {
+    color:#743432;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Footer*/
+footer{
+    width:100%;
+    min-height: calc(100vh - 52px);
+    background-color:#71697A;
+}
+
+.footer-heading {
+    text-align: center;
+    padding: 1.5em;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+  
+.timeAndPlace {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.time-open {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffffcc;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffffcc;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#location {
+    scroll-margin-top: 2em;
+}
+
+.logo {
+    width: 100px;
+    margin: auto;
+}
+
+#call-button {
+    color: #ffffffcc;
+    text-decoration: none; 
+}
+
+#call-button:visited {
+    text-decoration: none; 
+}
+
+#call-button:hover {
+    text-decoration: none; 
+}
+
+#call-button:active { 
+    text-decoration: none; 
+}
+
+
+
 @media screen and (min-width: 992px){
     .navbar-brand img {
         width: 100px;
@@ -195,6 +270,20 @@ body {
     .lunch-container, .dinner-container {
         padding-left: 32px;
         padding-right: 32px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer-heading {
+        padding-top: 20px
+    }
+    #top-heading {
+        padding-top: 40px;
+    }
+    hr {
+        width: 50%;
+        margin: auto;
+        color: #fff;
     }
 }
 
