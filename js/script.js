@@ -12,4 +12,30 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//Recenter accordian elements if open off the page
+function scrollToTarget(targetID) {
+    // Schedule the position finding to occur after a 500 millisecond delay
+    setTimeout(function() {
+        // Get the target element
+        var target = document.getElementById(targetID);
+    
+        // Get the top position of the target element
+        var targetTop = target.offsetTop;
+        var targetBottom = targetTop + target.offsetHeight;
 
+        // Get the top and bottom positions of the viewport
+        var viewportTop = window.pageYOffset;
+        var viewportBottom = viewportTop + window.innerHeight;
+        // Check if the target element is within the viewport
+        if (targetBottom > viewportTop && targetTop < viewportBottom) {
+            // The element is already in the viewport, so do not scroll
+            return;
+        }
+
+  
+      // Scroll to the target position
+      window.scrollTo(0, targetTop - 150);
+    }, 500);
+}
+
+  
